@@ -6,6 +6,7 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5'
 # Use Puma as the app server
+gem 'devise-i18n'
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -21,8 +22,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'sendgrid-ruby'
 gem 'devise'
 gem 'milia', '~> 1.3', '>= 1.3.1'
+gem 'bootstrap'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views', '~> 1.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
