@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_04_143034) do
+ActiveRecord::Schema.define(version: 2020_09_05_103306) do
+
+  create_table "artifacts", force: :cascade do |t|
+    t.string "name"
+    t.string "key"
+    t.integer "projects_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["projects_id"], name: "index_artifacts_on_projects_id"
+  end
 
   create_table "members", force: :cascade do |t|
     t.integer "tenant_id"
