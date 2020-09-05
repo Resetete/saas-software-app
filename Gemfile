@@ -27,7 +27,9 @@ gem 'bootstrap'
 # gem 'image_processing', '~> 1.2'
 
 gem 'twitter-bootstrap-rails'
-gem 'devise-bootstrap-views', '~> 1.0'
+gem 'devise-bootstrap-views'
+gem 'bootstrap-datepicker-rails'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
