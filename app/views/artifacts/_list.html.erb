@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @artifacts.each do |artifact| %>
+    <% artifacts.each do |artifact| %>
       <tr>
         <td><%= link_to artifact.id, artifact_path(artifact) %></td>
         <td><%= artifact.name %></td>
