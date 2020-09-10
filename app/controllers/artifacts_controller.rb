@@ -72,6 +72,6 @@ class ArtifactsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def artifact_params
-      params.require(:artifact).permit(:name, :projects_id, :upload)
+      params.require(:artifact).permit(:name, :project_id, :upload)
     end
 end
