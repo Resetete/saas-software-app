@@ -5,6 +5,11 @@
 // the compiled file.
 //
 
+//= require jquery
+//= require jquery-ui
+//= require jquery_ujs
+
 //= require twitter/bootstrap
+//= require credit_card_form
 //= require bootstrap-datepicker
 //= require_tree .

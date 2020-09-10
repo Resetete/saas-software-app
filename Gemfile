@@ -28,9 +28,12 @@ gem 'stripe'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'jquery-rails', '>3'
+gem 'jquery-ui-rails'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'bootstrap-datepicker-rails'
+
 
 
 # Reduces boot times through caching; required in config/boot.rb
