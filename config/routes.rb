@@ -20,5 +20,7 @@ Rails.application.routes.draw do
     :passwords => "milia/passwords",
   }
 
+  match '/plan/edit' => 'tenants#edit', via: :get, as: :edit_plan # tenants controller, edit action
+  match '/plan/update' => 'tenants#update', via: [:put, :patch], as: :update_plan
 
 end
