@@ -24,7 +24,7 @@ class Project < ApplicationRecord
       if user.is_admin?
         tenant.projects.order(:id).limit(1)
       else
-        user.project.where(tenant_id: tenant_id).order(:id).limit(1)
+        user.projects.where(tenant_id: tenant.id).order(:id).limit(1)
       end
     end
   end
